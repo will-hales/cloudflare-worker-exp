@@ -1,0 +1,11 @@
+name = "rust-cities"
+main = "build/worker/shim.mjs"
+compatibility_date = "2025-05-15"
+
+[[kv_namespaces]]
+binding = "cities"
+id = "21caf9ed47db4666a58d57d700425659"
+preview_id = "06238baef5074fe8a90b907f3e4ef47e"
+
+[build]
+command = "cargo install -q worker-build && worker-build --release"
